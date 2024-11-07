@@ -1,5 +1,6 @@
 *{
     font-family: "Work Sans", sans-serif;
+    
 }
 header{
     background-color:rgba(255,144,14,0.10);
@@ -58,12 +59,15 @@ ul>li{
     header{
         padding: 20px;
     }
-    nav{
+    nav,.middle-section{
         flex-direction: column;
     }
     nav>ul{
         flex-direction: column;
         gap: 20px;
+    }
+    .image-container{
+        grid-template-columns: 1fr;
     }
 }
 
@@ -74,6 +78,57 @@ ul>li{
     nav{
         flex-direction: column;
     }
+    .image-container{
+        grid-template-columns: 1fr;
+    }
   
 
+}
+main{
+   max-width: 1440px;
+   margin: 0 auto;
+
+}
+
+
+
+.middle-section{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    
+    
+}
+.image-container{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 20px;
+    width: 100%;
+  
+    
+}
+.image-container img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.text-container {
+    max-width: 600px;
+}
+.text-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+.text-container h2 span {
+    color: #ff8c00;
+}
+.text-container p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
 }
