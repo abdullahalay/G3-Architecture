@@ -59,8 +59,11 @@ ul>li{
     header{
         padding: 20px;
     }
-    nav,.middle-section{
+    nav,.middle-section,.facts-card-container{
         flex-direction: column;
+    }
+    .facts-card-container{
+        gap: 10px;
     }
     nav>ul{
         flex-direction: column;
@@ -75,8 +78,9 @@ ul>li{
     header{
         padding: 40px;
     }
-    nav{
+    nav,.facts-card-container{
         flex-direction: column;
+        gap: 20px;
     }
     .image-container{
         grid-template-columns: 1fr;
@@ -131,4 +135,39 @@ main{
     font-size: 16px;
     color: #666;
     margin-bottom: 20px;
+}
+.feature-description{
+    color: #666;
+}
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+.facts-card-container .card{
+    border-radius: 5px;
+    border: 2px solid gold;
+    padding: 50px 30px;
+    text-align: center;
+   
+}
+.card h2{
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.card p{
+    font-weight: 600px;
+    margin-top: 5px;
+}
+.facts{
+    margin-top: 100px;
+}
+.feature-description{
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.section-title{
+    font-size: 2rem;
+    font-weight: 800;
 }
